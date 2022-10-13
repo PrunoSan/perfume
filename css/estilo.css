@@ -1,0 +1,353 @@
+@font-face {
+    font-family:"cervino_fino";
+    src: url(../fonts/Cervino-ThinNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino_semifino";
+    src: url(../fonts/Cervino-LightNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino";
+    src: url(../fonts/Cervino-RegularNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino_bold";
+    src: url(../fonts/Cervino-BoldNeue.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --corFundo1:#181818;
+    --corFundo2:#404040;
+    --corFundo3:#eeeeee;
+    
+
+    --corTexto1:#eeeeee;
+    --corTexto1:#eeeeee;
+
+    --corTitulo1:#eeeeee;
+    --corTitulo2:#181818;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+body{
+    font-family:"cervino_semifino" ;
+    background-color: var(--corFundo1);
+    color: var(--corTexto1);
+    justify-content: center; 
+}
+
+
+p{
+    font-family: "cervino_semifino";
+    font-size: 30px;
+    line-height: 40px;
+    padding: 30px 0px;
+}
+
+
+
+h1{
+    font-family: "cervino_bold";
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+
+h2{
+    color: var(--corTitulo2);
+    background-color: var(--corFundo3);
+    font-size: 30px;
+    font-family:"cervino";
+    display: inline;
+    text-transform: uppercase;
+}
+
+
+.recuo {
+    text-indent: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.grifado{
+    color: var(--corTitulo2);
+    background-color: var(--corFundo3);
+    font-size: 30px;
+    font-family:"cervino_semifino" ;
+}
+
+.btn-outline-black {
+    color: var(--corFundo3);
+    border-color: var(--corFundo3);
+    border-radius: 0px; 
+    border-width: 3px;  
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.btn-outline-black:hover {
+    color: var(--corFundo1);
+    border-color: var(--corFundo3);
+    background-color: var(--corFundo3);
+    transition: background 0.4s linear;
+}
+
+
+.btn-outline-grey{
+    color: var(--corFundo3);
+    border-color: var(--corFundo3);
+    border-radius: 0px; 
+    border-width: 3px;  
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.btn-outline-grey:hover {
+    color: var(--corFundo2);
+    border-color: var(--corFundo3);
+    background-color: var(--corFundo3);
+    transition: background 0.4s linear;
+}
+
+
+.carousel-indicators{
+  margin: -20px;
+}
+
+
+.headersection {
+    font-family: "cervino_bold";
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: var(--corFundo1);
+    z-index: 2;  
+}
+
+.logo {
+    height: 5vh;
+}
+
+
+.nav-item :link,:visited {
+    color: var(--corTexto1);
+    line-height:18px;
+    font-size: 18px;
+    margin: 0px 50px;
+    text-transform: uppercase;
+}
+
+
+.fa-bars {
+    color: var(--corTexto1);
+}
+
+
+.introsection {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+
+/* .introsection video{
+    background-attachment:fixed ;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+} */
+
+
+
+.modelo {
+    padding: 8% 0 1px 0;  
+}
+
+.descricao{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--corTexto1);
+}
+
+
+.sobre{
+    background-color: var(--corFundo2);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+
+
+
+
+.produto{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+
+.text-lg-end_ad{
+    text-align: justify;  /* For Edge */
+    text-align-last: right;
+}
+
+.reviews{
+    background-color: var(--corFundo2);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+ .titulo{
+    margin-bottom: 20px;
+}
+
+.contato{
+    background-color: white;
+    color: #181818;
+
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagens/nuvem/assa2.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment:fixed ;
+}
+
+ .banner .mascara{
+    background: url(../imagens/nuvem/mascara5.png);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.banner .clouds{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(8s * var(--i)) linear infinite;
+}
+
+
+@keyframes animate{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+
+.contato h2{
+    color: var(--corTitulo1);
+    background-color: var(--corFundo2);
+}
+
+
+.link-animation{
+    position: relative;
+    cursor:pointer
+}
+
+.link-animation::after{
+    color: var(--corTitulo2);
+    position: absolute;
+    content:"";
+    left: 0%;
+    width: 0%;
+    background-color:var(--corFundo3);
+    z-index: -1;
+    transition: width 0.4s ease-out;
+}
+
+.nav-item .link-animation::after {
+    height: 50%;
+}
+
+.descricao .link-animation::after {
+    height: 90%;
+}
+
+
+.link-animation:hover.link-animation::after{
+    width: 100%;
+}
+
+.descricao a{
+    color: var(--corTexto1);
+}
+
+
+
+/* .nav-item :hover {
+    color: var(--corTitulo2);
+    background-color: var(--corFundo3);
+    transition: transform 0.40s ease-in-out;
+    transition: background 0.4s linear;
+} */
+
+
