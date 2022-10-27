@@ -32,17 +32,32 @@ html {
 
 }
 
-.sobre ::selection, .final ::selection, .headersection ::selection {
-    background: var(--corFundo1);
-    color: var(--corTexto2);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
 }
 
-.produto ::selection , .reviews ::selection{
+.produto ::selection , .reviews ::selection, .headersection ::selection {
+    background: var(--corFundo2);
+    color: var(--corTexto1);
+}
+
+.teste ::selection{
     background: var(--corFundo2);
     color: var(--corTexto1);
 }
 
 
+.sobre ::selection , .final ::selection {
+    background: var(--corFundo1);
+    color: var(--corTexto2);
+}
 
 :root{
     --corFundo1:#181818;
@@ -63,13 +78,12 @@ html {
 {
    width: 12px; 
    height: 2px;
+   background-color: #181818;
 }
 
 ::-webkit-scrollbar-thumb
 {
     background: linear-gradient(transparent,#947e66,transparent);
-
-
 
 }
 
@@ -91,8 +105,6 @@ html, body {
 
 body{
     font-family:"cervino_semifino" ;
-    background-color: var(--corFundo1);
-    color: var(--corTexto2);
     justify-content: center; 
 
 }
@@ -100,8 +112,8 @@ body{
 
 p{
     font-family: "cervino_semifino";
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
     padding: 30px 0px;
 }
 
@@ -112,6 +124,7 @@ h1{
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
+    color: var(--corTexto2);
 }
 
 
@@ -149,7 +162,7 @@ h2{
 }
 
 
-
+ 
 
 .carousel-indicators{
   margin: -20px;
@@ -157,12 +170,12 @@ h2{
 
 
 .headersection {
-    font-family: "cervino_bold";
+    font-family: "cervino";
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 9;  
-    
+    font-weight: bolder;  
 }
 
 #logo {
@@ -194,7 +207,7 @@ h2{
 }
 
 
-/* .link-animation{
+.link-animation{
     position: relative;
     cursor:pointer;
    
@@ -222,7 +235,7 @@ h2{
 .link-animation:hover.link-animation::after{
     width: 100%;
 
-} */
+}
 
 
 
@@ -233,8 +246,9 @@ h2{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    
+    background-color: var(--corFundo2);
 }
+
 
 
 .modelo{
@@ -262,7 +276,7 @@ h2{
       font-size: 300px;
     }
   }
-  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+
   @media (max-width: 1199.98px) {
     .teste {
       font-size: 200px;
@@ -288,6 +302,9 @@ h2{
   }
 
 
+  
+
+
 
 
 
@@ -297,6 +314,19 @@ h2{
     
    
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .descricao{
     text-transform: uppercase;
@@ -313,36 +343,70 @@ h2{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 80px 0px;
     color: var(--corTexto1);
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+    
+}
+
+.fundo{
+    background-color: #181818;
+}
+.sobre h1{
+    color: var(--corTexto1);
+}
+
+/* 
+.produto::before {
+    content: "";
+    width: 100%;
+    min-height: 20vh;
+    background-color: var(--corFundo1);
+    right: 0;
+    left: 0;
+    top: 193%;
+    bottom: 0;
+    position: absolute;
+    transform: skewY(4deg);
+    clear: both;
+} */
+
+.dividir{
+
+    background-color: var(--corFundo1);
+    
 }
 
 
 
 
-
-.produto{
+  .produto{
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding: 80px 0px;
+    background: var(--corFundo1);
+
 }
 
-
 .text-lg-end_ad{
-    text-align: justify;  /* For Edge */
+    text-align: justify;  
     text-align-last: right;
 }
 
 .reviews{
     background-color: var(--corFundo);
     width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding: 80px 0px;
+    color: var(--corTexto2);
+    background-color: var(--corFundo1);
 }
 
  .titulo{
@@ -413,15 +477,16 @@ h2{
     transition:0.5s;
   }
 
-  /* .anuncio{
+  .anuncio{
     padding: 50px 0px;
-  } */
+  }
 
 
 
  .imagens:hover img {
     opacity:0.3;
   }
+
   .produto img:hover {
     transform:perspective(800px)       rotateY(0deg);
     opacity:1;
