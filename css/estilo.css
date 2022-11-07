@@ -32,6 +32,58 @@ html {
 
 }
 
+
+
+
+
+
+.modal-backdrop {
+    background-color: var(--corFundo2);
+ }
+
+ .modal-content {
+    background-color: var(--corFundo1);
+    color: var(--corTexto2);
+    
+  }
+
+.btn-close{
+    color: var(--corFundo2);
+    background-color: #c0ab95;
+}
+
+.modal h1{
+    color: var(--corTexto2);
+    font-family:"cervino_fino";
+    text-align: 80px;
+}
+
+.modal h2{
+    color: var(--corTexto2);
+    font-family:"cervino_fino";
+    text-align: 20px;
+
+}
+
+.modal hr{
+    color: var(--corFundo2);
+
+}
+
+.modal img{
+    width: 50%;
+
+}
+
+.imgpop{
+    position: relative;
+    background: url(../imagens/areia.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment:fixed ;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 .loader {
 	position: fixed;
@@ -357,20 +409,7 @@ h2{
     color: var(--corTexto1);
 }
 
-/* 
-.produto::before {
-    content: "";
-    width: 100%;
-    min-height: 20vh;
-    background-color: var(--corFundo1);
-    right: 0;
-    left: 0;
-    top: 193%;
-    bottom: 0;
-    position: absolute;
-    transform: skewY(4deg);
-    clear: both;
-} */
+
 
 .dividir{
 
@@ -381,16 +420,7 @@ h2{
 
 
 
-  .produto{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 80px 0px;
-    background: var(--corFundo1);
 
-}
 
 .text-lg-end_ad{
     text-align: justify;  
@@ -404,10 +434,13 @@ h2{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 80px 0px;
     color: var(--corTexto2);
     background-color: var(--corFundo1);
 }
+
+
+.reviews img{
+    margin: 0 auto;}
 
  .titulo{
     margin-bottom: 30px;
@@ -464,13 +497,22 @@ h2{
 }
 
 
+.produto{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+    background: var(--corFundo1);
 
+}
 
 .produto img {
 
     object-fit:cover;
   
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    /* -webkit-box-reflect:below 1px linear-gradient(transparent, transparent, #0004); */
     
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
@@ -478,7 +520,7 @@ h2{
   }
 
   .anuncio{
-    padding: 50px 0px;
+    padding-top: 80px 0px;
   }
 
 
@@ -492,5 +534,12 @@ h2{
     opacity:1;
   }
 
+
+
+
+.owl-carousel img{
+    padding-top:35px ;
+    padding-bottom: 30px;
+}
 
 
