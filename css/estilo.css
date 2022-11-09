@@ -323,32 +323,36 @@ h2{
     z-index: 2;
 } */
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .teste {
       font-size: 300px;
     }
   }
 
-  @media (max-width: 1199.98px) {
+  @media (max-width: 1024px) {
     .teste {
-      font-size: 200px;
+        
+      font-size: 100px;
     }
   }
 
-  @media (max-width: 766px) {
-    .teste {
-      font-size: 150px;
+  @media (max-width: 768px) {
+    .teste { 
+        padding: 10px;
+      font-size: 100px;
     }
   }
 
-  @media (max-width: 522px) {
-    .teste {
+  @media (max-width: 425px) {
+    .teste { 
+      padding: 10px;
       font-size: 100px;
     }
   }
 
   @media (max-width: 320px) {
     .teste {
+        padding: 10px;
       font-size:90px;
     }
   }
