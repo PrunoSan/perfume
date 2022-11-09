@@ -187,9 +187,6 @@ h2{
     text-transform: uppercase;
 }
 
-/* .fa-bars {
-    color: var(--corFundo1);
-} */
 
 
 .recuo {
@@ -302,10 +299,10 @@ h2{
 }
 
 
-
+/* 
 .modelo{
-    padding: 22% 0px 1px 0px;
-}
+    padding: 25px 0px 1px 0px;
+} */
 
 
 
@@ -323,7 +320,7 @@ h2{
     z-index: 2;
 } */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     .teste {
       font-size: 300px;
     }
@@ -355,12 +352,7 @@ h2{
         padding: 10px;
       font-size:90px;
     }
-  }
-
-
-  
-
-
+  } */
 
 
 
@@ -370,16 +362,6 @@ h2{
     
    
 } */
-
-
-
-
-
-
-
-
-
-
 
 
 
