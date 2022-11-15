@@ -20,22 +20,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-
-/* html {
-    scroll-padding-top: 5rem;
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-
-
-
-
 
 .modal-backdrop {
     background-color: var(--corFundo2);
@@ -83,6 +72,37 @@
     background-attachment:fixed ;
 }
 
+.kussuado{
+   
+    background-image: linear-gradient(
+        to right,
+        #bb9f9f 0,
+        #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #bb9f9f 100%
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+.tolete{
+    background-image: linear-gradient(
+        to right,
+        #c09885 0,
+        #cb6d51 22%,  
+        #ecaf68 45%,
+        #f5d9d0 50%,
+        #ecaf68 55%,
+        #cb6d51 78%,
+        #c09885  100%  
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 .loader {
@@ -95,7 +115,7 @@
 	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
 }
 
-.produto ::selection , .reviews ::selection, .headersection ::selection {
+.produto ::selection , .reviews ::selection, .headersection ::selection, .modal ::selection {
     background: var(--corFundo2);
     color: var(--corTexto1);
 }
@@ -124,8 +144,6 @@
 
 }
 
-
-
 ::-webkit-scrollbar
 {
    width: 12px; 
@@ -145,20 +163,14 @@
 
 }
 
-
-
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-
 }
-
 
 body{
     font-family:"cervino_semifino" ;
     justify-content: center; 
-
 }
 
 
@@ -237,11 +249,7 @@ h2{
     line-height:18px;
     font-size: 18px;
     margin: 0px 50px;
-    text-transform: uppercase;
-
-
-    /* color: var(--corFundo1); */
-     
+    text-transform: uppercase;   
 }
 
 @keyframes animate{
