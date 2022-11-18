@@ -391,6 +391,7 @@ h2{
     justify-content: center;
     color: var(--corTexto1);
     position: relative;
+    padding: 80px 0px;
 
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
     
